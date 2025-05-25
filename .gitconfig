@@ -1,6 +1,8 @@
 [user]
 	email = sawan1210@gmail.com
 	name = Sawan Srivastava
+	signingkey = DE289D85
+
 [http]
 	postBuffer = 57286400
 [init]
@@ -9,3 +11,15 @@
 	rebase = false
 [commit]
 	gpgsign = true
+
+[core]
+	compression = 9
+	preloadindex = true
+
+[url "git@github.com:"]
+	insteadof = "gh:"
+
+[status]
+	branch = true
+	stash = true
+
