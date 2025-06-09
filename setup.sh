@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Determining type of Mac
 os=$(uname -s)
 
 # Check for Mac type (intel or apple silicon)
