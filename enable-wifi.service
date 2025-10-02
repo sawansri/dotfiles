@@ -1,0 +1,12 @@
+[Unit]
+Description=Reload mt7925e wifi driver after resume from sleep
+After=hibernate.target
+After=suspend.target
+
+[Service]
+ExecStartPre=/usr/sbin/modprobe -r mt7925e
+ExecStart=/usr/sbin/modprobe mt7925e
+
+[Install]
+WantedBy=hibernate.target
+WantedBy=suspend.target

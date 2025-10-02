@@ -1,0 +1,11 @@
+[Unit]
+Description=Unload mt7925e wifi driver before sleep
+Before=hibernate.target
+Before=suspend.target
+
+[Service]
+ExecStart=/usr/sbin/modprobe -r mt7925e
+
+[Install]
+WantedBy=hibernate.target
+WantedBy=suspend.target
